@@ -28,3 +28,4 @@ D:\Projetos\ts\TS-1\TS\TS\obj\Debug\net5.0\TS.dll
 D:\Projetos\ts\TS-1\TS\TS\obj\Debug\net5.0\ref\TS.dll
 D:\Projetos\ts\TS-1\TS\TS\obj\Debug\net5.0\TS.pdb
 D:\Projetos\ts\TS-1\TS\TS\obj\Debug\net5.0\TS.genruntimeconfig.cache
+D:\Projetos\ts\TS-1\TS\TS\obj\Debug\net5.0\TS.csproj.AssemblyReference.cache
