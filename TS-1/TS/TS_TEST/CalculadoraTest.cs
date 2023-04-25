@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 using TS;
 
 namespace TS_TEST
@@ -20,5 +21,71 @@ namespace TS_TEST
             int resultadoExperado = 10;
             Assert.AreEqual(resultadoExperado, resultadoPrograma);
         }
+
+        [Test]
+        public void TestSubtrair()
+        {
+            int resultadoPrograma = calculadora.subtrair(3, 2);
+            int resultadoExperado = 1;
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
+        [Test]
+        public void TestSubtrairComValorNegativo()
+        {
+            int resultadoPrograma = calculadora.subtrair(2, 3);
+            int resultadoExperado = -1;
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
+        [Test]
+        public void TestSubtrairComValoresZero()
+        {
+            int resultadoPrograma = calculadora.subtrair(0, 0);
+            int resultadoExperado = 0;
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
+        [Test]
+        public void TestMultipicacao()
+        {
+            int resultadoPrograma = calculadora.multiplicar(2, 5);
+            int resultadoExperado = 10;
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
+        [Test]
+        public void TestMultipicacaoComValoresNegativos()
+        {
+            int resultadoPrograma = calculadora.multiplicar(-2, -5);
+            int resultadoExperado = 10;
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
+        [Test]
+        public void TestMultipicacaoComValorZero()
+        {
+            int resultadoPrograma = calculadora.multiplicar(2, 0);
+            int resultadoExperado = 0;
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
+        [Test]
+        public void TestDivisao()
+        {
+            int resultadoPrograma = calculadora.dividir(3, 3);
+            int resultadoExperado = 1;
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
+        [Test]
+        public void TestDivisaoComDivisaoZero()
+        {
+            Assert.Throws<DivideByZeroException>(() => 
+                    calculadora.dividir(5, 0));
+            
+        }
+
+
     }
 }
