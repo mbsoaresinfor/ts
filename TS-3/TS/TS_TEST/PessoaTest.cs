@@ -40,5 +40,21 @@ namespace TS_TEST
             Assert.AreEqual(String.Empty, resultadoPrograma);
         }
 
+        [Test]
+        public void testeMaiorIdadeComValorMaior18()
+        {
+            Pessoa pessoa = new Pessoa();
+            bool resultadoPrograma = pessoa.eMaiorIdade(18);
+            Assert.IsTrue(resultadoPrograma);
+        }
+
+        [Test]
+        public void testeMaiorIdadeComValorMenor18()
+        {
+            Pessoa pessoa = new Pessoa();
+            bool resultadoPrograma = pessoa.eMaiorIdade(17);
+            Assert.IsFalse(resultadoPrograma);
+        }
+
     }
 }

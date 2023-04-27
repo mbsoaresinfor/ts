@@ -12,5 +12,11 @@ namespace TS
         {
             return nome + sobreNome;
         }
+
+        public bool eMaiorIdade(int numero)
+        {
+            return numero >= 18 ? true : false;
+        }
+
     }
 }
