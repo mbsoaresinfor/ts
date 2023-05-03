@@ -29,3 +29,9 @@ D:\Projetos\ts\TS-2\TS\TS\obj\Debug\net5.0\ref\TS.dll
 D:\Projetos\ts\TS-2\TS\TS\obj\Debug\net5.0\TS.pdb
 D:\Projetos\ts\TS-2\TS\TS\obj\Debug\net5.0\TS.genruntimeconfig.cache
 D:\Projetos\ts\TS-2\TS\TS\obj\Debug\net5.0\TS.csproj.AssemblyReference.cache
+D:\Projetos\ts\TS-2\TS\TS\bin\Debug\net5.0\nunit.framework.dll
+D:\Projetos\ts\TS-2\TS\TS\obj\Debug\net5.0\TS.csproj.CopyComplete
+D:\Projetos\ts\TS-2\TS\TS\bin\Debug\net5.0\Castle.Core.dll
+D:\Projetos\ts\TS-2\TS\TS\bin\Debug\net5.0\Moq.dll
+D:\Projetos\ts\TS-2\TS\TS\bin\Debug\net5.0\System.Diagnostics.EventLog.dll
+D:\Projetos\ts\TS-2\TS\TS\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
