@@ -51,10 +51,62 @@ namespace TS_TEST
         [Test]
         public void testeMaiorIdadeComValorMenor18()
         {
+            // arrange
             Pessoa pessoa = new Pessoa();
+
+            // ack
             bool resultadoPrograma = pessoa.eMaiorIdade(17);
+
+            // assert
             Assert.IsFalse(resultadoPrograma);
         }
+
+
+        [Test]
+        public void testeretornaTamanhoTextoValorOk()
+        {
+            // arrange
+            Pessoa pessoa = new Pessoa();
+            String entrada = "casa";
+            int resultadoExperado = 4;
+
+            // ack
+            int resultadoPrograma = pessoa.retornaTamanhoTexto(entrada);
+
+            // assert
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
+        [Test]
+        public void testeretornaTamanhoTextoValorVazio()
+        {
+            // arrange
+            Pessoa pessoa = new Pessoa();
+            String entrada = "";
+            int resultadoExperado = 0;
+
+            // ack
+            int resultadoPrograma = pessoa.retornaTamanhoTexto(entrada);
+
+            // assert
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
+        [Test]
+        public void testeretornaTamanhoTextoValorNull()
+        {
+            // arrange
+            Pessoa pessoa = new Pessoa();
+            String entrada = null;
+            int resultadoExperado = -1;
+
+            // ack
+            int resultadoPrograma = pessoa.retornaTamanhoTexto(entrada);
+
+            // assert
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
 
     }
 }
