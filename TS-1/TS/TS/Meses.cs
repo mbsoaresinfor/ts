@@ -20,5 +20,17 @@ namespace TS
             }
         }
 
+        public bool validaMes30Dias(int dias)
+        {
+            if (dias <= 0 || dias > 30)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
     }
 }

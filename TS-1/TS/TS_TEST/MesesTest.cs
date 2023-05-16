@@ -38,5 +38,32 @@ namespace TS_TEST
             resultadoExperado = false;
             Assert.AreEqual(resultadoExperado, resultadoPrograma);
         }
+
+        [Test]
+        public void testValoresMeses30diasValidos()
+        {
+            Meses meses = new Meses();
+            bool resultadoPrograma = meses.validaMes30Dias(1);
+            bool resultadoExperado = true;
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+
+            resultadoPrograma = meses.validaMes30Dias(30);
+            resultadoExperado = true;
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
+        [Test]
+        public void testValoresMeses30diasInValidos()
+        {
+            Meses meses = new Meses();
+            bool resultadoPrograma = meses.validaMes30Dias(0);
+            bool resultadoExperado = false;
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+
+            resultadoPrograma = meses.validaMes30Dias(31);
+            resultadoExperado = false;
+            Assert.AreEqual(resultadoExperado, resultadoPrograma);
+        }
+
     }
 }

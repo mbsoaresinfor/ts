@@ -26,6 +26,16 @@ namespace TS
             }
         }
 
+        public int retornaTamanhoTexto(String texto)
+        {
+            if(texto == null)
+            {
+                return 0;
+            }
+            return texto.Length;
+        }
+
+
 
 
     }

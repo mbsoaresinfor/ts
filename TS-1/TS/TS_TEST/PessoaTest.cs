@@ -38,6 +38,23 @@ namespace TS_TEST
             Assert.AreEqual(false, resutladoPrograma);
         }
 
+        [Test]
+        public void testretornaTamanhoTexto()
+        {
+            String entrada = "casa";
+            Pessoa pessoa = new Pessoa();
+            int resutladoPrograma = pessoa.retornaTamanhoTexto(entrada);
+            Assert.AreEqual(4, resutladoPrograma);
+
+            entrada = "";
+            resutladoPrograma = pessoa.retornaTamanhoTexto(entrada);
+            Assert.AreEqual(0, resutladoPrograma);
+
+            entrada = null;
+            resutladoPrograma = pessoa.retornaTamanhoTexto(entrada);
+            Assert.AreEqual(0, resutladoPrograma);
+        }
+
 
     }
 }
