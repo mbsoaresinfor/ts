@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TS
 {
@@ -7,6 +8,14 @@ namespace TS
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            ClientesSitesRepositorio clientesSitesRepositorio = new ClientesSitesRepositorio();
+            List<ClientesSitesEntidade> listaclietesSistesEntidade =
+                clientesSitesRepositorio.listarClientesSites(50);
+            
+            foreach(ClientesSitesEntidade clientesSitesEntidade in listaclietesSistesEntidade) { 
+                Console.WriteLine(clientesSitesEntidade);
+            }
+
         }
     }
 }
