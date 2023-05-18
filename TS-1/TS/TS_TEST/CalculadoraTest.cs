@@ -1,3 +1,4 @@
+using Moq;
 using NUnit.Framework;
 using System;
 using TS;
@@ -84,6 +85,24 @@ namespace TS_TEST
             Assert.Throws<DivideByZeroException>(() => 
                     calculadora.dividir(5, 0));
             
+        }
+
+        [Test]
+        public void TestSomarComMock()
+        {
+            // arrange
+            Mock<ICalculadora> mock = new Mock<ICalculadora>();
+            mock.Setup(m => m.somar(It.IsAny<int>(), It.IsAny<int>())).Returns(15);
+            ICalculadora calculadora = mock.Object;
+            int resultado;
+
+            // act
+            resultado = calculadora.somar(200, 35);
+
+            // assert
+            Assert.AreEqual(15, resultado);
+
+
         }
 
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TS
 {
-    public class Calculadora
+    public class Calculadora : ICalculadora
     {
 		public int somar(int a, int b)
 		{
