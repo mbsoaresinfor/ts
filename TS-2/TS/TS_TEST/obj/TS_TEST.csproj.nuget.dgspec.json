@@ -51,6 +51,10 @@
             "NUnit": {
               "target": "Package",
               "version": "[3.13.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -131,6 +135,10 @@
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[3.17.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             },
             "coverlet.collector": {
               "target": "Package",
