@@ -16,6 +16,10 @@ namespace TS
                 Console.WriteLine(clientesSitesEntidade);
             }
 
+            ClientesSitesEntidade cr = new ClientesSitesEntidade("marcelo barbosa soares","","");
+            clientesSitesRepositorio.inserirClienteSites(cr);
+
+
         }
     }
 }

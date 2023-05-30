@@ -13,11 +13,21 @@ namespace TS
         private SqlConnection _conn;
         private SqlDataReader _reader = null;
 
+
+
         public ClientesSitesRepositorio()
         {
             _conn = new SqlConnection(_CONNECTION_STRING);
             _conn.Open();
             Console.WriteLine("Conectado no banco de dados");
+        }
+
+        public void inserirClienteSites(ClientesSitesEntidade clientesSitesEntidade) {
+            SqlCommand cmd = new SqlCommand(
+               $"INSERT INTO [dbo].[clientes_site] (nome, logarEmail) values (" +
+               $"'{clientesSitesEntidade.nome}',1)", _conn);
+            Console.WriteLine("sql inserir " + cmd.CommandText);
+            cmd.ExecuteNonQuery();
         }
 
         public List<ClientesSitesEntidade> listarClientesSites(int limite)
