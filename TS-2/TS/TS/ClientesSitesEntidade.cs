@@ -12,6 +12,8 @@ namespace TS
         public string cpf { get; set; }
         public string email { get; set; }
 
+        public ClientesSitesEntidade() { }
+
         public ClientesSitesEntidade(string nome,string cpf, string email)
         {
             this.cpf = cpf;
