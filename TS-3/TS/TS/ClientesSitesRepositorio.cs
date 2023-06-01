@@ -20,6 +20,21 @@ namespace TS
             Console.WriteLine("Conectado no banco de dados");
         }
 
+        public int inserirClientesSites(ClientesSitesEntidade clientesSitesEntidade)
+        {
+            return -1;
+        }
+
+        public int deletarClientesSitesPeloId(int id)
+        {
+            return -1;
+        }
+
+        public ClientesSitesEntidade buscarClientesSitesPeloId(int id)
+        {
+            return null;
+        }
+
         public List<ClientesSitesEntidade> listarClientesSites(int limite)
         {
             List<ClientesSitesEntidade> listaClientesSitesEntidade = new List<ClientesSitesEntidade>();
